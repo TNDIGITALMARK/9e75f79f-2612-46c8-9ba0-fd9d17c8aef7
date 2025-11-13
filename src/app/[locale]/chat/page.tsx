@@ -22,7 +22,7 @@ export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: 'Welcome to DARK AI. I\'m your unrestricted AI assistant. How can I help you explore today?',
+      content: 'Welcome to DARK AI! I\'m your AI assistant powered by multiple state-of-the-art models.\n\n**Currently Active:** Demo Mode with intelligent fallback responses\n\nI can help you with:\n• General questions and conversations\n• Understanding AI capabilities\n• Learning how to configure full API access\n\nTo unlock real-time AI responses from GPT-4, Claude, Gemini, and other models, simply ask me about API configuration!\n\nWhat would you like to explore today?',
       timestamp: new Date()
     }
   ])
@@ -30,9 +30,10 @@ export default function ChatPage() {
   const [selectedModel, setSelectedModel] = useState(AI_MODELS[0])
   const [isRecording, setIsRecording] = useState(false)
   const [isSidebarOpen, setIsSidebarOpen] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
 
-  const handleSend = () => {
-    if (!input.trim()) return
+  const handleSend = async () => {
+    if (!input.trim() || isLoading) return
 
     const userMessage: Message = {
       role: 'user',
@@ -42,16 +43,51 @@ export default function ChatPage() {
 
     setMessages(prev => [...prev, userMessage])
     setInput('')
+    setIsLoading(true)
 
-    // Simulate AI response
-    setTimeout(() => {
+    try {
+      // Call the actual AI API
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          messages: [
+            ...messages.map(m => ({ role: m.role, content: m.content })),
+            { role: 'user', content: userMessage.content }
+          ],
+          model: selectedModel.id
+        })
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to get AI response')
+      }
+
+      const data = await response.json()
+
       const aiMessage: Message = {
         role: 'assistant',
-        content: `[${selectedModel.name}] This is a simulated response. In production, this would connect to the actual AI model API and provide unrestricted, intelligent responses based on your query.`,
+        content: data.content || 'No response generated',
         timestamp: new Date()
       }
+
       setMessages(prev => [...prev, aiMessage])
-    }, 1000)
+    } catch (error) {
+      console.error('Chat error:', error)
+
+      // Fallback message on error
+      const errorMessage: Message = {
+        role: 'assistant',
+        content: `I apologize, but I encountered an error processing your request. This could be due to:\n\n• API configuration issues\n• Network connectivity problems\n• Rate limiting\n\nPlease try again or contact support if the issue persists.`,
+        timestamp: new Date()
+      }
+
+      setMessages(prev => [...prev, errorMessage])
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -177,7 +213,7 @@ export default function ChatPage() {
             ))}
 
             {/* Typing Indicator */}
-            {false && (
+            {isLoading && (
               <div className="flex gap-4">
                 <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${selectedModel.color} flex items-center justify-center flex-shrink-0 text-xl`}>
                   {selectedModel.icon}
@@ -237,10 +273,14 @@ export default function ChatPage() {
                 {/* Send Button */}
                 <button
                   onClick={handleSend}
-                  disabled={!input.trim()}
+                  disabled={!input.trim() || isLoading}
                   className="p-3 bg-gradient-to-r from-[hsl(var(--neon-blue))] to-[hsl(var(--neon-purple))] text-white rounded-lg hover:scale-105 transition-transform disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 glow-blue"
                 >
-                  <Send className="w-5 h-5" />
+                  {isLoading ? (
+                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                  ) : (
+                    <Send className="w-5 h-5" />
+                  )}
                 </button>
               </div>
 
