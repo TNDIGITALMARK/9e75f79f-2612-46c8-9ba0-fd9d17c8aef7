@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "DARK AI - Limitless AI Technology",
+  description: "Unrestricted AI platform with multiple premium models. ChatGPT alternative without limitations.",
 };
 
 export default function RootLayout({
@@ -40,9 +40,10 @@ export default function RootLayout({
           <ZyloProvider>
             <ThemeProvider
               attribute="class"
-              defaultTheme="light"
-              enableSystem
+              defaultTheme="dark"
+              enableSystem={false}
               disableTransitionOnChange
+              forcedTheme="dark"
             >
               <TooltipProvider>
                 {children}

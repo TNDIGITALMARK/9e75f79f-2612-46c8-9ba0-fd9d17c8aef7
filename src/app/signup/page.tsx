@@ -70,14 +70,24 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-background py-12 px-4">
-      <Card className="w-full max-w-md border-border shadow-sm">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-[hsl(var(--background))] to-[hsl(var(--background-secondary))] py-12 px-4">
+      {/* Logo */}
+      <Link href="/" className="absolute top-8 left-1/2 -translate-x-1/2 flex items-center gap-2">
+        <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[hsl(var(--neon-blue))] to-[hsl(var(--neon-purple))] flex items-center justify-center glow-blue">
+          <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+        </div>
+        <span className="text-2xl font-bold glow-text">DARK AI</span>
+      </Link>
+
+      <Card className="w-full max-w-md glass-card border-neon shadow-lg">
         <CardHeader className="space-y-2">
-          <CardTitle className="text-3xl font-semibold text-center tracking-tight">
+          <CardTitle className="text-3xl font-bold text-center">
             Create Account
           </CardTitle>
-          <CardDescription className="text-center text-base">
-            Sign up to get started with your account
+          <CardDescription className="text-center text-base text-[hsl(var(--muted-foreground))]">
+            Join the future of unrestricted AI
           </CardDescription>
         </CardHeader>
         <CardContent className="pt-6">
@@ -203,7 +213,11 @@ export default function SignupPage() {
             )}
 
             {/* Submit Button */}
-            <Button type="submit" className="w-full h-11 font-medium" disabled={loading}>
+            <Button
+              type="submit"
+              className="w-full h-11 font-semibold bg-gradient-to-r from-[hsl(var(--neon-blue))] to-[hsl(var(--neon-purple))] text-white hover:scale-105 transition-transform glow-blue"
+              disabled={loading}
+            >
               {loading ? 'Creating account...' : 'Create Account'}
             </Button>
 
