@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "features": "Características",
+    "pricing": "Precios",
+    "showcase": "Escaparate",
+    "login": "Iniciar Sesión"
+  },
+  "hero": {
+    "badge": "Tecnología de IA Ilimitada",
+    "title": "IA Sin Restricciones",
+    "titleGradient": "Sin Límites",
+    "description": "Accede a múltiples modelos de IA premium a través de una única interfaz. Experimenta conversaciones sin limitaciones. Bienvenido al futuro de la exploración de IA sin restricciones.",
+    "startExploring": "Comenzar a Explorar",
+    "viewModels": "Ver Modelos de IA"
+  },
+  "models": {
+    "gpt4": {
+      "name": "GPT-4 Turbo",
+      "description": "Poder de razonamiento ilimitado"
+    },
+    "claude": {
+      "name": "Claude Opus",
+      "description": "Especialista en escritura creativa"
+    },
+    "gemini": {
+      "name": "Gemini Ultra",
+      "description": "Análisis multimodal"
+    }
+  },
+  "features": {
+    "title": "Características",
+    "toggleLabel": "Premium / Gratis",
+    "voiceCommands": {
+      "title": "Comandos de Voz y Síntesis",
+      "description": "Interactúa naturalmente a través de voz con transcripción en tiempo real y síntesis de respuesta"
+    },
+    "imageProcessing": {
+      "title": "Procesamiento Avanzado de Imágenes",
+      "description": "Carga y analiza imágenes con capacidades avanzadas de visión por computadora"
+    },
+    "knowledgeAccess": {
+      "title": "Acceso al Conocimiento Sin Restricciones",
+      "description": "Explora cualquier tema sin filtros de contenido o limitaciones artificiales"
+    },
+    "aiLiberation": {
+      "title": "Liberación Impulsada por IA",
+      "description": "Experimenta conversaciones que se adaptan a tus necesidades sin restricciones artificiales",
+      "features": {
+        "adaptive": "Personalidades de IA adaptativas",
+        "contextAware": "Respuestas conscientes del contexto",
+        "unlimited": "Profundidad de conversación ilimitada"
+      }
+    },
+    "aiVoices": {
+      "title": "Liberación de Voces de IA",
+      "subtitle": "Interacciones de voz naturales"
+    }
+  },
+  "pricing": {
+    "title": "Elige Tu Nivel de Acceso",
+    "subtitle": "Comienza gratis o desbloquea potencial ilimitado con Premium",
+    "free": {
+      "title": "Gratis",
+      "description": "Acceso limitado a modelos de IA",
+      "price": "$0",
+      "period": "/mes",
+      "features": {
+        "models": "Acceso a 2 modelos de IA",
+        "interface": "Interfaz de chat básica",
+        "messages": "Mensajes diarios limitados",
+        "speed": "Velocidad de respuesta estándar"
+      },
+      "cta": "Comenzar Gratis"
+    },
+    "premium": {
+      "title": "Premium",
+      "badge": "POPULAR",
+      "description": "Todo ilimitado",
+      "price": "$29",
+      "period": "/mes",
+      "features": {
+        "models": "Acceso a TODOS los modelos de IA",
+        "messages": "Mensajes ilimitados",
+        "multimedia": "Soporte de voz e imagen",
+        "speed": "Velocidad de respuesta prioritaria",
+        "advanced": "Características avanzadas",
+        "restrictions": "Sin restricciones de contenido"
+      },
+      "cta": "Suscribirse Ahora"
+    }
+  },
+  "showcase": {
+    "title": "Escaparate",
+    "items": {
+      "productivity": "Herramientas de Productividad",
+      "research": "IA de Investigación",
+      "creative": "Contenido Creativo",
+      "blog": "Soporte de Blog",
+      "code": "Dev de IA de Código",
+      "terms": "Términos",
+      "legal": "Cookies Legales",
+      "subscribe": "Suscribirse"
+    },
+    "badges": {
+      "new": "Nuevo",
+      "hot": "Popular",
+      "pro": "Pro",
+      "premium": "Premium"
+    }
+  },
+  "footer": {
+    "tagline": "Plataforma de Tecnología de IA Ilimitada - Exploración Sin Restricciones",
+    "copyright": "© 2025 DARK AI. Todos los derechos reservados."
+  }
+}

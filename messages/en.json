@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "showcase": "Showcase",
+    "login": "Log In"
+  },
+  "hero": {
+    "badge": "Limitless AI Technology",
+    "title": "Unrestricted AI",
+    "titleGradient": "Without Boundaries",
+    "description": "Access multiple premium AI models through a single interface. Experience conversations without limitations. Welcome to the future of unrestricted AI exploration.",
+    "startExploring": "Start Exploring",
+    "viewModels": "View AI Models"
+  },
+  "models": {
+    "gpt4": {
+      "name": "GPT-4 Turbo",
+      "description": "Unlimited reasoning power"
+    },
+    "claude": {
+      "name": "Claude Opus",
+      "description": "Creative writing specialist"
+    },
+    "gemini": {
+      "name": "Gemini Ultra",
+      "description": "Multimodal analysis"
+    }
+  },
+  "features": {
+    "title": "Features",
+    "toggleLabel": "Premium / Free",
+    "voiceCommands": {
+      "title": "Voice Commands & Synthesis",
+      "description": "Interact naturally through voice with real-time transcription and response synthesis"
+    },
+    "imageProcessing": {
+      "title": "Advanced Image Processing",
+      "description": "Upload and analyze images with advanced computer vision capabilities"
+    },
+    "knowledgeAccess": {
+      "title": "Unrestricted Knowledge Access",
+      "description": "Explore any topic without content filters or artificial limitations"
+    },
+    "aiLiberation": {
+      "title": "AI-Driven Liberation",
+      "description": "Experience conversations that adapt to your needs without artificial restrictions",
+      "features": {
+        "adaptive": "Adaptive AI personalities",
+        "contextAware": "Context-aware responses",
+        "unlimited": "Unlimited conversation depth"
+      }
+    },
+    "aiVoices": {
+      "title": "AI Voices Liberation",
+      "subtitle": "Natural voice interactions"
+    }
+  },
+  "pricing": {
+    "title": "Choose Your Access Level",
+    "subtitle": "Start free or unlock unlimited potential with Premium",
+    "free": {
+      "title": "Free",
+      "description": "Limited AI model access",
+      "price": "$0",
+      "period": "/month",
+      "features": {
+        "models": "Access to 2 AI models",
+        "interface": "Basic chat interface",
+        "messages": "Limited daily messages",
+        "speed": "Standard response speed"
+      },
+      "cta": "Start Free"
+    },
+    "premium": {
+      "title": "Premium",
+      "badge": "POPULAR",
+      "description": "Unlimited everything",
+      "price": "$29",
+      "period": "/month",
+      "features": {
+        "models": "Access to ALL AI models",
+        "messages": "Unlimited messages",
+        "multimedia": "Voice & image support",
+        "speed": "Priority response speed",
+        "advanced": "Advanced features",
+        "restrictions": "No content restrictions"
+      },
+      "cta": "Subscribe Now"
+    }
+  },
+  "showcase": {
+    "title": "Showcase",
+    "items": {
+      "productivity": "Productivity Tools",
+      "research": "Research AI",
+      "creative": "Creative Content",
+      "blog": "Blog Support",
+      "code": "Code AI Dev",
+      "terms": "Terms",
+      "legal": "Legal Cookies",
+      "subscribe": "Subscribe"
+    },
+    "badges": {
+      "new": "New",
+      "hot": "Hot",
+      "pro": "Pro",
+      "premium": "Premium"
+    }
+  },
+  "footer": {
+    "tagline": "Limitless AI Technology Platform - Unrestricted Exploration",
+    "copyright": "© 2025 DARK AI. All rights reserved."
+  }
+}

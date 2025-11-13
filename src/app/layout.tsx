@@ -23,16 +23,20 @@ export const metadata: Metadata = {
   description: "Unrestricted AI platform with multiple premium models. ChatGPT alternative without limitations.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+  const locale = params?.locale || 'en';
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head>
 
-      
+
         {/* PHOENIX_EDITOR_INJECTION_START */}
         {(process.env.NODE_ENV === 'development' ||
           process.env.NEXT_PUBLIC_ENABLE_PHOENIX_EDITOR === 'true') && (

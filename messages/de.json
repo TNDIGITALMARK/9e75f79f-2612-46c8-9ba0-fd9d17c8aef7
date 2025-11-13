@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "showcase": "Schaufenster",
+    "login": "Anmelden"
+  },
+  "hero": {
+    "badge": "Unbegrenzte KI-Technologie",
+    "title": "Uneingeschränkte KI",
+    "titleGradient": "Ohne Grenzen",
+    "description": "Greifen Sie über eine einzige Schnittstelle auf mehrere Premium-KI-Modelle zu. Erleben Sie Gespräche ohne Einschränkungen. Willkommen in der Zukunft der uneingeschränkten KI-Erkundung.",
+    "startExploring": "Mit Erkunden Beginnen",
+    "viewModels": "KI-Modelle Anzeigen"
+  },
+  "models": {
+    "gpt4": {
+      "name": "GPT-4 Turbo",
+      "description": "Unbegrenzte Denkleistung"
+    },
+    "claude": {
+      "name": "Claude Opus",
+      "description": "Spezialist für kreatives Schreiben"
+    },
+    "gemini": {
+      "name": "Gemini Ultra",
+      "description": "Multimodale Analyse"
+    }
+  },
+  "features": {
+    "title": "Funktionen",
+    "toggleLabel": "Premium / Kostenlos",
+    "voiceCommands": {
+      "title": "Sprachbefehle und Synthese",
+      "description": "Interagieren Sie natürlich über Sprache mit Echtzeit-Transkription und Antwort-Synthese"
+    },
+    "imageProcessing": {
+      "title": "Erweiterte Bildverarbeitung",
+      "description": "Laden Sie Bilder hoch und analysieren Sie sie mit fortschrittlichen Computer-Vision-Fähigkeiten"
+    },
+    "knowledgeAccess": {
+      "title": "Uneingeschränkter Wissenszugang",
+      "description": "Erkunden Sie jedes Thema ohne Inhaltsfilter oder künstliche Einschränkungen"
+    },
+    "aiLiberation": {
+      "title": "KI-Gesteuerte Befreiung",
+      "description": "Erleben Sie Gespräche, die sich ohne künstliche Einschränkungen an Ihre Bedürfnisse anpassen",
+      "features": {
+        "adaptive": "Adaptive KI-Persönlichkeiten",
+        "contextAware": "Kontextbewusste Antworten",
+        "unlimited": "Unbegrenzte Gesprächstiefe"
+      }
+    },
+    "aiVoices": {
+      "title": "KI-Stimmen-Befreiung",
+      "subtitle": "Natürliche Sprachinteraktionen"
+    }
+  },
+  "pricing": {
+    "title": "Wählen Sie Ihre Zugangsstufe",
+    "subtitle": "Starten Sie kostenlos oder erschließen Sie unbegrenztes Potenzial mit Premium",
+    "free": {
+      "title": "Kostenlos",
+      "description": "Eingeschränkter Zugang zu KI-Modellen",
+      "price": "0€",
+      "period": "/Monat",
+      "features": {
+        "models": "Zugang zu 2 KI-Modellen",
+        "interface": "Basis-Chat-Schnittstelle",
+        "messages": "Begrenzte tägliche Nachrichten",
+        "speed": "Standard-Antwortgeschwindigkeit"
+      },
+      "cta": "Kostenlos Starten"
+    },
+    "premium": {
+      "title": "Premium",
+      "badge": "BELIEBT",
+      "description": "Alles unbegrenzt",
+      "price": "29€",
+      "period": "/Monat",
+      "features": {
+        "models": "Zugang zu ALLEN KI-Modellen",
+        "messages": "Unbegrenzte Nachrichten",
+        "multimedia": "Sprach- und Bildunterstützung",
+        "speed": "Prioritäts-Antwortgeschwindigkeit",
+        "advanced": "Erweiterte Funktionen",
+        "restrictions": "Keine Inhaltsbeschränkungen"
+      },
+      "cta": "Jetzt Abonnieren"
+    }
+  },
+  "showcase": {
+    "title": "Schaufenster",
+    "items": {
+      "productivity": "Produktivitätswerkzeuge",
+      "research": "Forschungs-KI",
+      "creative": "Kreativer Inhalt",
+      "blog": "Blog-Unterstützung",
+      "code": "Code-KI-Entwicklung",
+      "terms": "Bedingungen",
+      "legal": "Rechtliche Cookies",
+      "subscribe": "Abonnieren"
+    },
+    "badges": {
+      "new": "Neu",
+      "hot": "Beliebt",
+      "pro": "Pro",
+      "premium": "Premium"
+    }
+  },
+  "footer": {
+    "tagline": "Unbegrenzte KI-Technologie-Plattform - Uneingeschränkte Erkundung",
+    "copyright": "© 2025 DARK AI. Alle Rechte vorbehalten."
+  }
+}
